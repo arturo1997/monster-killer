@@ -17,7 +17,7 @@ button{
 #background{
     background-color: rgb(42, 0, 70);
     height: 100vh;
-    background-image: url(/img/fondo.jpg);
+    background-image: url(../img/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -64,7 +64,7 @@ button{
 .recompensa-habilidad{
     width: 20vw;
     height: 27vw;
-    background-image: url(/img/tablero.png);
+    background-image: url(../img/tablero.png);
     margin-right: 20px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -211,3 +211,123 @@ button{
         transform: translateX(-50%);
     }
   } */
+
+
+  .c-loader{
+	
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.4s ease-in-out 0.4s;
+  }
+
+  .c-loader.is-inactive{
+		opacity: 0;
+		visibility: hidden;
+	}
+	
+	.c-loader__box{
+		
+		position: relative;
+		width: 400px;
+		height: 90px;
+		max-width: 90%;
+		display: flex;
+		align-items: center;
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.4s ease-in-out;
+    }
+    .c-loader.is-inactive {
+			opacity: 0;
+			visibility: hidden;
+		}
+		
+	
+	
+        .c-loader__mask{
+		
+		display: block;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 2;
+		background-color: #FFFFFF;
+		animation: loader_anim 3s ease-in-out infinite both;
+		transform-origin: 100% 0%;
+		display: none;
+		
+	}
+	
+    .c-loader__mask{
+		
+		display: block;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 2;
+		background-color: #FFFFFF;
+		animation: loader_anim 3s ease-in-out infinite both;
+		transform-origin: 100% 0%;
+		
+	}
+	
+	.c-loader__wrapper-svg{
+		
+		width: 80%;
+		margin: 0 auto;
+		display: block;
+		
+	}
+	
+
+	.c-loader__svg-path{
+		fill: white;
+	}
+	
+    @keyframes loader_anim {
+        0%{ 
+          transform: scaleX(1);
+          transform-origin: 100% 0%;
+      }
+      25%{ 
+          transform: scaleX(0);
+      }
+      50%{ 
+          transform: scaleX(1);
+          transform-origin: 100% 0%;
+      }
+      51%{
+          transform: scaleX(1);
+          transform-origin: 0% 0%;
+      }
+      75%{
+          transform: scaleX(0);
+      }
+        99%{
+          transform: scaleX(1);
+          transform-origin: 0% 0%;
+      }
+      100%{
+          transform: scaleX(1);
+          transform-origin: 100% 0%;
+      }
+  }
+
+  .activo{
+      visibility: hidden;
+      opacity: 0;
+  }
