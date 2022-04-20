@@ -131,7 +131,7 @@ button{
 }
 
 .animacion-explosion{
-    background-image: url('/img/explosion2.png');
+    background-image: url('../img/explosion2.png');
     width: 334.7187px;
     height: 152.0399px;
     background-position: 0px 0;
