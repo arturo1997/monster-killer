@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Kyller</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="background">
+        <div class="header">
+            <div class="campo-vida">
+                <div class="campo-vida-titulo">
+                    <img src="/img/vida.png" alt=""><span>HP:</span> <span id="campo-vida-hp">34</span>
+                </div>
+                <div class="campo-vida-progreso">
+                    <img class="campo-vida-progreso-base" src="/img/campo-base-monster.png" alt="">
+                    <div class="campo-vida-progreso-line">
+                        <img id="vida-progreso"  src="/img/campo-monster.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="recompensa-habilidad">
+                <div class="recompensa">
+                    <img src="/img/reconpensa.png" alt=""> <span>Oro:</span> <span id="campo-moneda">0</span>
+                </div>
+                <div class="daño">
+                    <img src="/img/daño.png" alt=""><span>Daño:</span> <span id="campo-daño" >10</span>
+                </div>
+            </div>
+        </div>
+        <img id="set-img" src="/img/set.png" alt="">
+        <div class="enemy">
+            <div id="nivel-monster"><h2>ENEMY LVL 1</h2></div>
+            <img id="monster" src="img/nvl-1.png" width="180px" alt="">
+            <div class="animacion-explosion">
+            </div>
+        </div>
+    </div>
+    <div class="bienvenida">
+        <img src="/img/logoBanner.png" alt="">
+        <button id="jugar">JUGAR</button>
+        <div class="agradecimiento">
+           Gracias {^_^} HOLA MUNDO por tus videos
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

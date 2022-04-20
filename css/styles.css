@@ -1,0 +1,213 @@
+body{
+    cursor: url('../img/cursor2.png'), auto; /*IE & Edge*/
+    cursor: url('../img/cursor2.png'), auto; /*Rest browsers*/
+    font-family: 'Aladin', cursive;
+}
+button{
+    cursor: url('../img/cursor2.png'), auto; /*IE & Edge*/
+    cursor: url('../img/cursor2.png'), auto; /*Rest browsers*/
+    font-family: 'Aladin', cursive;
+}
+*{
+    margin: 0;
+    color: white;
+    user-select:none;
+    box-sizing: border-box;
+}
+#background{
+    background-color: rgb(42, 0, 70);
+    height: 100vh;
+    background-image: url(/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    margin-top: 10px;
+    width: 100%;
+}
+/** ENEMY STYLES **/
+.campo-vida{
+    width: 30%;
+    position: relative;
+    margin-left: 20px;
+}
+.campo-vida-titulo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.campo-vida-progreso{
+    position: relative;
+}
+.campo-vida-progreso-base{
+    width: 100%;
+}   
+.campo-vida-progreso-line{
+    width: 94%;
+    border-radius: 5px;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+#vida-progreso{
+    width: 100%;
+    transform: translateX(0%);
+}
+/** PLAYER STYLES **/
+.recompensa-habilidad{
+    width: 20vw;
+    height: 27vw;
+    background-image: url(/img/tablero.png);
+    margin-right: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.recompensa{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.daño{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#set-img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.enemy{
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+}
+#monster{
+    width: 50%;
+    padding: 30px;
+    transition: 1s;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    cursor: url('../img/cursor.png'), auto; /*IE & Edge*/
+    cursor: url('../img/cursor.png'), auto; /*Rest browsers*/
+    animation: monsteranimate 1s infinite;
+}
+@keyframes monsteranimate{
+    0%{
+        padding: 0px;
+    }
+    50%{
+        padding: 30px;
+    }
+    100%{
+        padding: 0%;
+    }
+}
+#lvl{
+}
+#lvl h2{
+    text-align: center;
+}
+
+.animacion-explosion{
+    background-image: url('/img/explosion2.png');
+    width: 334.7187px;
+    height: 152.0399px;
+    background-position: 0px 0;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 9%;
+    display: none;
+}
+.animate-explosion{
+    animation: move 1s steps(7);
+}
+@keyframes move{
+    to{
+        background-position: -2343.0309px 0;
+    }
+}
+
+/* .campo-vida-progreso img{
+    width: 100%;
+    height: auto;
+  }
+  @supports(object-fit: cover){
+      .campo-vida-progreso img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+      }
+  } */
+
+  .bienvenida{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 99;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 1s ease-out;
+
+  }
+  .bienvenida img{
+      width: 100%;
+  }
+  #jugar{
+      color: rgb(0, 255, 0);
+      position: fixed;
+      left: 50%;
+      z-index: 9999;
+      border: 2px solid rgb(0, 255, 0);
+      border-radius: 20px;
+      padding: 10px 20px;
+      bottom: 10%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.336);
+      /* animation: animatebutton 1s infinite; */
+  }
+  .agradecimiento{
+      position: fixed;
+      bottom: 2%;
+      right: 2%;
+      font-size: 10px;
+  }
+  /* @keyframes animatebutton{
+    0%{
+        transform: translateX(-50%);
+    }
+    25%{
+        transform: translateX(-70%);
+    }
+    75%{
+        transform: translateX(-30%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+  } */
