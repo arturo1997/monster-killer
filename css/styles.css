@@ -64,7 +64,7 @@ button{
 .recompensa-habilidad{
     width: 20vw;
     height: 27vw;
-    background-image: url(/img/tablero.png);
+    background-image: url(img/tablero.png);
     margin-right: 20px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -131,7 +131,7 @@ button{
 }
 
 .animacion-explosion{
-    background-image: url('/img/explosion2.png');
+    background-image: url('img/explosion2.png');
     width: 334.7187px;
     height: 152.0399px;
     background-position: 0px 0;
