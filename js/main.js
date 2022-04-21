@@ -106,5 +106,5 @@ let bienvenida = document.querySelector('.bienvenida')
 let buttonBienvenida = document.getElementById('jugar')
 
 buttonBienvenida.addEventListener('click', ()=>{
-    bienvenida.style.left='-50%'
+    bienvenida.style.left='-100%'
 })

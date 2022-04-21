@@ -60,11 +60,13 @@ button{
     width: 100%;
     transform: translateX(0%);
 }
+#nivel-monster h2{
+    text-align: center;
+}
 /** PLAYER STYLES **/
 .recompensa-habilidad{
-    width: 20vw;
-    height: 27vw;
-    background-image: url(../img/tablero.png);
+    max-width: 30vw;
+    max-height: 30vw;
     margin-right: 20px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,6 +75,9 @@ button{
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    border: 9px groove transparent ;
+    border-image: url(../img/border.png) 40 round;
+    padding: 20px;
 }
 .recompensa{
     display: flex;
@@ -101,7 +106,7 @@ button{
     top: 20%;
 }
 #monster{
-    width: 50%;
+    min-width: 70%;
     padding: 30px;
     transition: 1s;
     position: absolute;
@@ -164,19 +169,25 @@ button{
   } */
 
   .bienvenida{
-    width: 80%;
-    position: absolute;
-    top: 50%;
-    border-radius: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
     overflow: hidden;
-    z-index: 999;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    z-index: 99;
+    left: 0;
     transition: 1s ease-out;
-
+    background-color: rgba(0, 0, 0, 0.568);
+    bottom: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
   }
   .bienvenida img{
-      width: 100%;
+      width: 80%;
+      display: block;
+      margin: auto;
+      border: 1px solid white;
+      border-radius: 20px;
   }
   #jugar{
       color: rgb(0, 255, 0);
@@ -186,7 +197,7 @@ button{
       border: 2px solid rgb(0, 255, 0);
       border-radius: 20px;
       padding: 10px 20px;
-      bottom: 10%;
+      bottom: 15%;
       transform: translateX(-50%);
       background-color: rgba(0, 0, 0, 0.336);
       /* animation: animatebutton 1s infinite; */
@@ -263,7 +274,7 @@ button{
 		height: 100%;
 		position: absolute;
 		z-index: 2;
-		background-color: #FFFFFF;
+		background-color: #6CDD00;
 		animation: loader_anim 3s ease-in-out infinite both;
 		transform-origin: 100% 0%;
 		display: none;
@@ -279,7 +290,7 @@ button{
 		height: 100%;
 		position: absolute;
 		z-index: 2;
-		background-color: #FFFFFF;
+		background-color: #6CDD00;
 		animation: loader_anim 3s ease-in-out infinite both;
 		transform-origin: 100% 0%;
 		
